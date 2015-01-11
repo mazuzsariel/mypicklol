@@ -1,0 +1,12 @@
+{
+    "templates": {
+    	"page": "page.html",
+    	"body": "items-body.html",
+    	"bannerR":"banner-right.html",
+    	"bannerL":"banner-left.html"
+	},
+    "tags":{
+    	"itemspage":true,
+    	"fullcontent":true
+    }
+}

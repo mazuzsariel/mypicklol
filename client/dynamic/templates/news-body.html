@@ -1,0 +1,65 @@
+<h1 class="mtb">{{lang.news.header}}</h1>({{datefrom}} - {{dateto}})
+
+{{#news}}
+<div class="row tLeft news mtb">
+  <div class="cell mth3">
+    {{#champion}}     
+      <ul class="table champions active">
+        <li><a href={{& link}}>
+          <span class="icon">{{title}}
+            <span style="background-position: 0px {{sprite}}px;"></span>
+          </span>
+          <span class="name"><strong>{{name}}</strong></span>
+        </a></li> 
+      </ul>
+    {{/champion}}
+  </div>
+  <div class="cell mlb pls  bgtab">
+    <div class="pln bgw">
+    {{#isstronger}}
+      <h3>{{champion.name}} {{lang.label.stronger.header}}</h3>
+      <ul class="table champions side active tLeft">
+        {{#stronger}}
+          <li><a href="{{& link}}" title="{{> lang.label.stronger.title}}">
+            <span class="icon">{{title}}
+              <span style="background-position: 0px {{sprite}}px;"></span>
+            </span>
+	    {{#power}}
+            <span class="power strong">{{power}}</span>      
+	    {{/power}}
+            {{#progress}}
+              <span class="progress {{#progressdown}}down{{/progressdown}}">
+                {{progress}}
+              </span>
+              {{/progress}}
+              <span class="name"><strong>{{name}}</strong></span>
+          </a></li>
+        {{/stronger}}
+      </ul>
+    {{/isstronger}}
+
+    {{#isweaker}}
+      <h3>{{champion.name}} {{lang.label.weaker.header}}</h3>
+      <ul class="table champions side active tLeft">
+        {{#weaker}}
+          <li><a href="{{& link}}" title="{{> lang.label.weaker.title}}">
+            <span class="icon">{{title}}
+              <span style="background-position: 0px {{sprite}}px;"></span>
+            </span>
+	    {{#power}}
+            <span class="power weak">{{power}}</span>
+	    {{/power}}
+            {{#progress}}
+              <span class="progress {{#progressdown}}down{{/progressdown}}">
+                {{progress}}
+              </span>
+              {{/progress}}
+              <span class="name"><strong>{{name}}</strong></span>
+        </a></li>
+        {{/weaker}}
+      </ul>
+    {{/isweaker}}
+     </div>
+  </div>
+</div>
+{{/news}}

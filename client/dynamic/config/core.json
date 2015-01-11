@@ -1,0 +1,11 @@
+{"config":{
+    "menu":{
+		"link":{
+			"stat":"/stat",
+		    "about":"/about",
+		    "news":"/news",
+		    "items":"/items",
+		    "champions":"/"
+		}
+    }
+}}

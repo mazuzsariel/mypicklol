@@ -1,0 +1,12 @@
+{
+    "templates": {
+	"page": "page.html",
+	"body": "about-body.html",
+	"bannerR":"banner-right.html",
+	"bannerL":"banner-left.html"
+    },
+    "tags":{
+	"aboutpage": true,
+	"date": "2013-02-05"
+    }
+}

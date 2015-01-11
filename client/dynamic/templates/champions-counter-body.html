@@ -1,0 +1,73 @@
+<ul class="table champions">
+  {{#champion}}
+  <li>
+  <span class="icon">{{title}}<span style="background-position: 0px {{sprite}}px;"></span></span>
+  <h1 class="tn">{{name}}</h1></span>
+  </li>
+  {{/champion}}
+</ul>
+
+<h3 class="tcg mtn">
+{{champion.name}} {{lang.label.stronger.header}}
+</h3>
+
+<ul class="table champions active tLeft">
+  {{#stronger}}<li><a href="{{& link}}" title="{{> lang.label.stronger.title}}">
+        <span class="icon">{{title}}<span style="background-position: 0px {{sprite}}px;"></span></span>
+        <span class="power strong">{{power}}</span>       
+        {{#progress}}
+          <span class="progress {{#progressdown}}down{{/progressdown}}">
+            {{progress}}
+          </span>
+        {{/progress}}
+        <span class="name"><strong>{{name}}</strong></span>
+      </a></li>{{/stronger}}
+</ul>
+
+<ul class="table champions low active tLeft">
+      {{#strongerlow}}<li><a href="{{& link}}" title="{{> lang.label.stronger.title}}">
+        <span class="icon {{#progress}}iprogress{{/progress}}" style="background-position: 0px {{sprite}}px;">
+        </span>
+        <span class="power strong">
+          {{power}}
+        </span>
+        {{#progress}}
+          <span class="progress {{#progressdown}}down{{/progressdown}}">
+            {{progress}}
+          </span>
+       {{/progress}}        
+       <span class="name">
+         <strong>
+           {{name}}
+         </strong>
+       </span>
+      </a></li>{{/strongerlow}}
+</ul>
+
+<h3 class="tcr mtn">
+{{champion.name}} {{lang.label.weaker.header}}
+</h3>
+
+<ul class="table champions active tLeft">
+  {{#weaker}}<li><a href="{{& link}}" title="{{> lang.label.weaker.title}}">
+        <span class="icon">{{title}}<span style="background-position: 0px {{sprite}}px;"></span></span>
+        <span class="power weak">{{power}}</span>
+        {{#progress}}
+          <span class="progress {{#progressdown}}down{{/progressdown}}">
+            {{progress}}
+          </span>
+        {{/progress}}
+        <span class="name"><strong>{{name}}</strong></span>
+  </a></li>{{/weaker}}
+</ul>
+
+<ul class="table champions low active tLeft">
+  {{#weakerlow}}<li><a href="{{& link}}" title="{{> lang.label.weaker.title}}">
+      <span class="icon {{#progress}}iprogress{{/progress}}" style="background-position: 0px {{sprite}}px;"></span>
+      <span class="power weak">{{power}}</span>
+      {{#progress}}<span class="progress {{#progressdown}}down{{/progressdown}}">{{progress}}</span>{{/progress}}
+      <span class="name"><strong>{{name}}</strong></span>
+ </a></li>{{/weakerlow}}
+</ul>
+
+{{#config.dev}}{{>commentsenter}}{{/config.dev}}

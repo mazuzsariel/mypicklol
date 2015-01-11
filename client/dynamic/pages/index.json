@@ -1,0 +1,13 @@
+{
+    "templates": {
+	"page": "page.html",
+	"body": "champions-select-body.html",
+	"bannerR":"banner-right.html",
+	"bannerL":"banner-left.html"
+},
+    "tags":{
+	"homepage": true,
+	"fullcontent":true,
+	"date": "2013-02-05"
+    }
+}

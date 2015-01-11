@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="{{lang.lang}}">
+<head>
+  <title>{{>lang.title}}</title>
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link media="all" rel="stylesheet" type="text/css" href=/css/core.css>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  {{#homepage}} 
+  <meta name ="keywords" content="LoL, League of legends, pick, counter, counterpick, counter pick, build, guide">
+  <meta name ="description" content="Tips for counters, builds and guides for all champions in lol or League of Legends"> 
+  {{/homepage}}
+  {{#championpage}}
+  <meta name ="keywords" content="{{champion.name}}, LoL, League of legends, pick, counter, counterpick, counter pick, build, guide">
+  <meta name ="description" content="{{champion.name}} counter, build, guide and tips for any line in lol or League of Legends">
+  {{/championpage}}
+  {{#aboutpage}}
+  <meta name ="keywords" content="About, LoL, League of Legends, pick, counter, counterpick, counter pick">
+  <meta name ="description" content="About how to use pages with champions, find good counter, build, guide and tips in lol or League of Legends">
+  {{/aboutpage}}
+  {{#statpage}}
+  <meta name ="keywords" content="Statistic, Picklol, LoL, League of Legends, pick, counter, counterpick, counter pick">
+  <meta name ="description" content="Statistic of picklol.net">
+  {{/statpage}}
+  {{#newspage}}
+  <meta name ="keywords" content="News, LoL, League of Legends, pick, counter, counterpick, counter pick, guide, build">
+  <meta name ="description" content="Last changes in balance for champions, counters, builds, guides and tips in lol or League of Legends">
+  {{/newspage}}
+  {{#itemspage}}
+  <meta name ="keywords" content="Items, LoL, League of Legends, pick, counter, description, characteristic">
+  <meta name ="description" content="List of all Items in League of Legends with description and characteristic">
+  {{/itemspage}}
+  {{#itempage}}
+  <meta name ="keywords" content="{{item.name}}, LoL, League of legends, pick, counter, description, characteristic">
+  <meta name ="description" content="{{item.name}} - {{item.plaintext}}">
+  {{/itempage}}
+  
+  <meta name="google-site-verification" content="a05-BV_ZT3HDdAVcwWhRxAKUxSKEX5KD88KypbWufqM" />
+  <meta property="og:title" content="{{>lang.title}}" />
+  <meta property="og:type" content="game" />
+  <meta property="og:url" content="{{&url.full}}" />
+  <meta property="og:image" content="{{&url.img}}" />
+  <meta property="og:site_name" content="{{lang.logo}}" />
+  <meta property="fb:app_id" content="579467132079607" />  
+  <!--[if lt IE 9]>
+  <script>
+    var elements = ['header', 'footer', 'section', 'aside', 'nav', 'hgroup', 'article', 'figure', 'figcaption', 'time'];
+    for (var i = 0; i < elements.length; i++) {document.createElement(elements[i]);}
+  </script>
+  <![endif]-->
+</head>
+<body>
+<div class="page centered">
+<div class="cell side">{{>bannerL}}</div>
+<div class="cellR side mtb">{{>bannerR}}</div>
+<div class="cell mScontent">
+
+  <header class="row mtn">
+    <div class="cell">
+      <div class="row tLeft">
+        {{^homepage}}<a href="/" class="cell">{{/homepage}}
+        <img src="/img/logo.png" />
+		<!--<strong class="{{#homepage}}cell {{/homepage}}tb headerleft tStd tLine">{{lang.logo}}</strong>-->
+        {{^homepage}}</a>{{/homepage}}
+      <form class="cellR">
+	    <input class="search" type="text" autocomplete="off" name="s" id="s" placeholder="{{lang.searchPlaceholder}}">
+	  </form>       
+      </div>
+      <div class="row">
+        <h2 class="tLeft ts cell">{{&lang.headerslogan}}</h2>
+        
+        <nav class="cellR">
+          <ul class="table menu">
+            <li>{{^homepage}}<a href="{{config.menu.link.champions}}">{{/homepage}}{{lang.menu.champions}}{{^homepage}}</a>{{/homepage}}</li>
+            <li>{{^itemspage}}<a href="{{config.menu.link.items}}">{{/itemspage}}{{lang.menu.items}}{{^itemspage}}</a>{{/itemspage}}</li>
+            <li>{{^newspage}}<a href="{{config.menu.link.news}}">{{/newspage}}{{lang.menu.news}}{{^newspage}}</a>{{/newspage}}</li>
+            <li>{{^aboutpage}}<a href="{{config.menu.link.about}}">{{/aboutpage}}{{lang.menu.about}}{{^aboutpage}}</a>{{/aboutpage}}</li>
+			<li>{{^statpage}}<a href="{{config.menu.link.stat}}">{{/statpage}}{{lang.menu.stat}}{{^statpage}}</a>{{/statpage}}</li>
+          </ul>
+        </nav>
+        
+      </div>
+    </div>
+    
+    <div class="cellR social">
+      <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpicklol&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+      <iframe allowtransparency="true" frameborder="0" scrolling="no" src="//platform.twitter.com/widgets/follow_button.html?screen_name=picklol&show_count=false&show_screen_name=false" style="width:100px; height:20px;"></iframe>
+    </div>
+
+  </header>
+  <article class="mtn">
+    {{>body}}
+  </article>
+
+  <article class="championArticle">
+    {{&article}}
+  </article>
+
+  <footer class="{{#fullcontent}}mtn{{/fullcontent}}{{^fullcontent}}mtb{{/fullcontent}}">
+    <p>© 2013-2014 {{lang.logo}}.&nbsp;{{lang.followUs}}&nbsp;
+      <ul class="md_links">
+        <li><a href="{{lang.linkUsTwitter}}" target="_blank">{{lang.twitter}}</a></li>
+        <li><a href="{{lang.linkUsFacebook}}" target="_blank">{{lang.facebook}}</a></li>
+        <li><a href="{{lang.linkUsGooglePlus}}" target="_blank">{{lang.googleplus}}</a></li>
+      <ul>
+  </footer>
+</div>
+</div>
+<script>
+  var champions = {{&championsJs}};
+  {{&js}}
+</script>
+
+<!-- google analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37881303-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<div class="overlay" id="overlay"></div>
+</body>
+</html>

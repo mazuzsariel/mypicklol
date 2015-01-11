@@ -1,0 +1,9 @@
+Items:
+http://gameinfo.euw.leagueoflegends.com/en/game-info/items/
+http://ddragon.leagueoflegends.com/cdn/4.9.1/data/en_GB/item.json
+http://ddragon.leagueoflegends.com/cdn/4.9.1/img/sprite/item0.png
+http://ddragon.leagueoflegends.com/cdn/4.9.1/img/sprite/item1.png
+http://ddragon.leagueoflegends.com/cdn/4.9.1/img/sprite/item2.png
+
+Image converter:
+http://www.pictureresize.org/online-images-converter.html

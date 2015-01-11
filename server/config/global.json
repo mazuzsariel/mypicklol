@@ -1,0 +1,37 @@
+{
+	"folder":{
+		"static":"client/static/",
+		"dynamic":"client/dynamic/pages",
+		"templates":"client/dynamic/templates",
+		"languages":"client/dynamic/lang"
+	},
+	"data":{
+		"counters":"client/data/archive/2014-12-25/counters.json",
+		"news":"client/data/archive/2014-12-25/news.json",
+		"champions":"client/data/champions.json",
+		"items":"client/data/items.json",
+		"articles": "client/data/champions_articles.json"
+	},
+	"css":{
+		"core":"client/dynamic/css/core.css",
+		"corestatic":"client/static/css/core.css"
+	},
+	"js":{
+		"core":"client/dynamic/js/core.js"
+	},
+	"config":{
+		"core":"client/dynamic/config/core.json"
+	},
+	"utilpages":{
+		"sitemap":"client/dynamic/utilpages/sitemap.xml",
+		"robots":"client/dynamic/utilpages/robots.txt",
+		"err404":"client/dynamic/utilpages/404.html",
+		"err500":"client/dynamic/utilpages/500.html"
+	},
+	"secure":{
+		"fb":{
+			"id":"363576930424067",
+			"secret":"b9b725e5589172d51f727c00c525d165"
+		}
+	}	
+}

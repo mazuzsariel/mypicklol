@@ -1,0 +1,45 @@
+{{#item}}
+<ul class="table items mtb">
+	<li class="side row">
+		{{#fromFormattedPresent}}
+		<ul class="table items active cell tLeft covers">
+		{{#fromFormatted}}
+			<li>
+				<a href="{{& link}}" title="{{name}}">
+					<span class="icon brs" style="background-image: url(/img/{{sprite}}); background-position: -{{x}}px -{{y}}px;" title="{{name}}"><span></span></span>
+				</a>
+			</li>
+		{{/fromFormatted}}
+		</ul>
+		{{/fromFormattedPresent}}
+	</li>
+	<li>
+	    <span class="icon brs" style="background-image: url(/img/{{image.sprite}}); background-position: -{{image.x}}px -{{image.y}}px;" title="{{name}}"><span></span></span>
+	</li>
+	<li class="side tLeft tMono row">
+		{{#gold}}
+			<div class="cell">
+				<div class="ts tcb">{{& lang.item.cost}}<span class="inline tcy">{{gold.base}}</span></div>
+				<div class="ts tcg">{{& lang.item.total}}<span class="inline tcy">{{gold.total}}</span></div>
+				<div class="ts tcr">{{& lang.item.sell}}<span class="inline tcy">{{gold.sell}}</span></div>
+			</div>
+		{{/gold}}
+		{{#intoFormattedPresent}}
+		<ul class="table items active cellR tRight covers">
+		{{#intoFormatted}}
+			<li>
+				<a href="{{& link}}" title="{{name}}">
+					<span class="icon brs" style="background-image: url(/img/{{sprite}}); background-position: -{{x}}px -{{y}}px;" title="{{name}}"><span></span></span>
+				</a>
+			</li>
+		{{/intoFormatted}}
+		{{/intoFormattedPresent}}
+		</ul>
+	</li>
+</ul>
+<h1 class="tm mtb">{{name}}</h1>
+{{#plaintext}}<div class="mbn">{{plaintext}}</div>{{/plaintext}}
+<div class="tLeft">
+{{& description}}
+</div>
+{{/item}}

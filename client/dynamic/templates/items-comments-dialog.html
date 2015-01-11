@@ -1,0 +1,11 @@
+<div id="dialogItems" class="dialog items">
+  <form>
+    <input type="text" name="itemsFilter" id="itemsFilter" class="filtritems" placeholder="{{lang.comment.items.placeholder}}">
+  </form>
+  
+  <ul class="table items active">
+    {{#items.data}}<li data-name="{{name}}" data-id="{{nameEncoded}}" data-position="-{{image.x}}px -{{image.y}}px"><a href="javascript:void(0);" onclick="LF.activateElement(this.parentNode); return false;" title="{{name}}">
+      <span class="icon" style="background-position: -{{image.x}}px -{{image.y}}px;"><span></span></span>
+    </a></li>{{/items.data}}
+  </ul>
+</div>

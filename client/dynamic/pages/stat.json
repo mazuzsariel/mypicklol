@@ -1,0 +1,11 @@
+{
+    "templates": {
+	"page": "page.html",
+	"body": "stat-body.html",
+	"bannerR":"banner-right.html",
+	"bannerL":"banner-left.html"
+    },
+    "tags":{
+	"statpage": true
+    }
+}

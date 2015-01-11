@@ -1,0 +1,9 @@
+ <form>
+   <input type="text" name="itemsFilter" id="itemsFilter" class="search mbn" placeholder="{{lang.comment.items.placeholder}}">
+ </form>
+ 
+ <ul class="table items active">
+   {{#items.data}}<li data-name="{{name}}" data-id="{{id}}" data-position="-{{image.x}}px -{{image.y}}px"><a href="{{& link}}" title="{{name}}">
+     <span class="icon" style="background-image: url(/img/{{image.sprite}}); background-position: -{{image.x}}px -{{image.y}}px;"><span></span></span>
+   </a></li>{{/items.data}}
+ </ul>

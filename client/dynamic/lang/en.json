@@ -1,0 +1,113 @@
+{
+    "lang":{
+	    "lang":"en",
+		"logo":"Pick LoL",
+		"headerslogan":"Counter picks at&nbsp;<a href=\"http://leagueoflegends.com\">League of Legends</a>",
+		
+		"label":{
+		    "weaker":{
+			"header":"is strong against"
+		    },
+		    "stronger":{
+			"header":"is weak against"
+		    }
+		},
+	
+		"err404":{
+		    "title":"Error 404 (Not Found)",
+		    "text":"The requested URL <u>{{url}}</u> was not found on this server."
+		},
+	
+		"err500":{
+		    "title":"Error ",
+		    "text":"Server Error"
+		},
+	
+		"android":{
+		    "commercial1":"android app",
+		    "commercial2":"coming soon"
+		},
+	
+		"menuCounterPick":"Counter Pick",
+		"searchPlaceholder":"Enter Champion's Name",
+		"searchButton":"Counter",
+		
+		"twitter":"Twitter",
+		"facebook":"Facebook",
+		"googleplus":"Google+",
+		
+		"linkUsTwitter":"https://twitter.com/picklol",
+		"linkUsFacebook":"https://www.facebook.com/picklol",
+		"linkUsGooglePlus":"https://plus.google.com/113956336175176047169/posts",
+		
+		"followUs":"Join us on",
+	
+		"about":{
+		    "header":"About",
+		    "header2":"Details how to use website",
+		    "description":"<p>We use experts to evaluate each champion.</p><p>Team and Solo players from high leagues help us to evaluate counters based of their own experience</p><p>Rating is refreshed each month for all heroes and after each patch</p>",
+			"details":
+			{
+				"detail1": "Increase (blue) or Decrease (orange) - means how many points champion got/lost since last evaluation.",
+				"detail2": "Overpower (max 100) - means how much champion is stronger compare to selected champion.",
+				"detail3": "Weak (max 100) - means how much champion is weak compare to selected champion.",
+				"detail4": "Less important champions means that there are many another champions better than this one, however it does not mean they are bad choice."
+			},
+		    "growing":"Increase - more points since last evaluation",
+		    "overpower":"Overpower - stronger compare to selected",
+		    "drooping":"Decrease - less poins since last evaluation",
+		    "retreat":"Weak - weaker compare to selected",
+		    "less":"Less important champions - still a good choice"
+		},
+	
+		"news":{
+		    "header":"Most significant changes for last evaluation",
+		    "header2":"Updates since last evaluation"
+		},
+		
+		"stat":{
+		    "header":"Statistic of picklol.net for last month from Google",
+		    "header2":"Statistic for picklol.net for last month "
+		},
+	
+		"menu":{
+			"stat":"stat",
+		    "about":"about",
+		    "news":"news",
+		    "items":"items",
+		    "champions":"champions"
+		},
+		
+		"champion":{
+		    "progress":{
+			"new":"new",
+			"deleted":"out"
+		    }
+		},
+	
+		"item":{
+			"cost":"cost:&nbsp;&nbsp;&nbsp;",
+			"total":"total:&nbsp;&nbsp;",
+			"sell":"sell:&nbsp;&nbsp;&nbsp;"
+		},
+		"comment":{
+		    "button":{
+			"send":"send",
+			"item":"item"
+		    },
+		    "placeholder":"Words of Wisdom",
+		    "items":{
+			"placeholder":"Enter Item's Name"
+		    }
+		}	
+    },
+
+    "partials":{
+	"lang.label.weaker.title":"{{champion.name}} is {{power}} OP against {{name}}{{#progress}}. {{progress}} {{#progressdown}}regress{{/progressdown}}{{^progressdown}}progress{{/progressdown}} from the last evaluation{{/progress}}",
+	"lang.label.stronger.title":"{{name}} is {{power}} OP against {{champion.name}}{{#progress}}. {{progress}} {{#progressdown}}regress{{/progressdown}}{{^progressdown}}progress{{/progressdown}} from the last evaluation{{/progress}}",
+	"lang.title":"{{#championpage}}{{champion.name}} counter guide{{/championpage}}{{#homepage}}Champions counters guides League Legends{{/homepage}}{{#aboutpage}}About counters guides builds League Legends{{/aboutpage}}{{#statpage}}Statistic for Picklol.net for last month{{/statpage}}{{#newspage}}Last news champions counter guides{{/newspage}}{{#itempage}}{{item.name}} - {{item.plaintext}}{{/itempage}}{{#itemspage}}All Items in League of Legends{{/itemspage}}",
+	"lang.header1":"{{#championpage}}{{champion.name}}{{/championpage}}{{#homepage}}Pick LoL{{/homepage}}",
+	"lang.label.as.title":"As {{champion.name}}",
+	"lang.label.against.title":"Against {{champion.name}}"	  
+    }
+}

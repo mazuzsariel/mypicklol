@@ -1,0 +1,10 @@
+{
+    "templates": {
+	"page": "page.html",
+	"body": "news-body.html",
+	"bannerR":"banner-right.html",
+	"bannerL":"banner-left.html"
+    },
+    "tags":{
+	"newspage": true}
+}
